@@ -227,7 +227,9 @@
     </nav>
   </div><!-- responsive header -->
 
-  <div class="topbar stick">
+  <div class="topbar stick" >
+
+
     <div class="logo">
       <a title="" href=""><img src="../assets/images/logo.png" alt=""></a>
     </div>
@@ -247,12 +249,12 @@
         <span>Newsfeed</span>
       </div>
       <ul class="setting-area">
-        <li><a href="" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
-        <li>
+        <li><a href="#" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
+        <li (click)="activate($event)">
           <a href="#" title="Friend Requests" data-ripple="">
             <i class="fa fa-user"></i><em class="bg-red">5</em>
           </a>
-          <div class="dropdowns active">
+          <div class="dropdowns">
             <span>5 New Requests <a href="#" title="">View all Requests</a></span>
             <ul class="drops-menu">
               <li>
@@ -338,8 +340,10 @@
             </ul>
             <a href="friend-requests.html" title="" class="more-mesg">View All</a>
           </div>
+
         </li>
-        <li>
+
+        <li (click)="activate($event)">
           <a href="#" title="Notification" data-ripple="">
             <i class="fa fa-bell"></i><em class="bg-purple">7</em>
           </a>
@@ -425,7 +429,7 @@
             <a href="notifications.html" title="" class="more-mesg">View All</a>
           </div>
         </li>
-        <li>
+        <li (click)="activate($event)">
           <a href="#" title="Messages" data-ripple=""><i class="fa fa-commenting"></i><em class="bg-blue">9</em></a>
           <div class="dropdowns">
             <span>5 New Messages <a href="#" title="">Mark all as read</a></span>
@@ -501,7 +505,8 @@
             <a href="chat-messenger.html" title="" class="more-mesg">View All</a>
           </div>
         </li>
-        <li><a href="#" title="Languages" data-ripple=""><i class="fa fa-globe"></i><em>EN</em></a>
+        <li (click)="activate($event)">
+          <a href="#" title="Languages" data-ripple=""><i class="fa fa-globe"></i><em>EN</em></a>
           <div class="dropdowns languages">
             <div data-gutter="10" class="row">
               <div class="col-md-3">
@@ -726,7 +731,8 @@
             </div>
           </div>
         </li>
-        <li><a href="#" title="Help" data-ripple=""><i class="fa fa-question-circle"></i></a>
+        <li (click)="activate($event)">
+          <a href="#" title="Help" data-ripple=""><i class="fa fa-question-circle"></i></a>
           <div class="dropdowns helps">
             <span>Quick Help</span>
             <form method="post">
@@ -744,7 +750,7 @@
           </div>
         </li>
       </ul>
-      <div class="user-img">
+      <div class="user-img" (click)="activate($event)">
         <h5>Jack Carter</h5>
         <img src="../assets/images/resources/admin.jpg" alt="">
         <span class="status f-online"></span>
@@ -765,7 +771,7 @@
           </ul>
         </div>
       </div>
-      <span class="ti-settings main-menu" data-ripple=""></span>
+      <span (click)="activeParam($event)" class="ti-settings main-menu" data-ripple=""></span>
     </div>
     <nav>
       <ul class="nav-list">
@@ -1214,7 +1220,7 @@
   </div><!-- left sidebar menu -->
 
   <section>
-    <div class="gap2 gray-bg">
+    <div class="gap2 gray-bg mt-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -3111,7 +3117,9 @@
         });
 
     });
+
 </script>
+
 
 </body>
 
