@@ -898,70 +898,16 @@
   <div class="fixed-sidebar right">
     <div class="chat-friendz">
       <ul class="chat-users">
-        <li class="mr-2 ml-2">
+        <li class="mr-2 ml-2" (click)="activeChat($event)">
           <div class="author-thmb">
             <img src="../assets/images/resources/side-friend1.jpg" alt="">
             <span class="status f-online"></span>
           </div>
         </li>
-        <li class="mr-2 ml-2">
+        <li class="mr-2 ml-2" (click)="activeChat($event)">
           <div class="author-thmb">
             <img src="../assets/images/resources/side-friend2.jpg" alt="">
             <span class="status f-away"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend3.jpg" alt="">
-            <span class="status f-online"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend4.jpg" alt="">
-            <span class="status f-offline"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend5.jpg" alt="">
-            <span class="status f-online"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend6.jpg" alt="">
-            <span class="status f-online"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend7.jpg" alt="">
-            <span class="status f-offline"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend8.jpg" alt="">
-            <span class="status f-online"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend9.jpg" alt="">
-            <span class="status f-away"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend10.jpg" alt="">
-            <span class="status f-away"></span>
-          </div>
-        </li>
-        <li class="mr-2 ml-2">
-          <div class="author-thmb">
-            <img src="../assets/images/resources/side-friend8.jpg" alt="">
-            <span class="status f-online"></span>
           </div>
         </li>
       </ul>
@@ -980,8 +926,8 @@
             <span class="close-mesage"><i class="ti-close"></i></span>
           </div>
         </div>
-        <div class="chat-list">
-          <ul>
+        <div class="chat-list" >
+          <ul style="overflow-y:scroll;">
             <li class="me">
               <div class="chat-thumb"><img src="../assets/images/resources/chatlist1.jpg" alt=""></div>
               <div class="notification-event">
@@ -1460,7 +1406,7 @@
                 </aside>
               </div><!-- sidebar -->
               <div class="col-lg-6">
-                <div class="central-meta postbox">
+                <div class="central-meta postbox" (click)="activePost($event)">
                   <span class="create-post">Create post</span>
                   <div class="new-postbox">
                     <figure>
@@ -3088,6 +3034,8 @@
 
 <script src="../assets/js/main.min.js"></script>
 <script src="../assets/js/jquery-stories.js"></script>
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+<script src="../assets/js/jquery.downCount.js"></script>
 <script src="../assets/js/TweenMax.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>
 <script src="../assets/js/locationpicker.jquery.js"></script>

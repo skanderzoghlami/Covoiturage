@@ -1248,6 +1248,7 @@ header.sticky {
     top: 10px;
 }
 
+
 .dropdowns.languages {
     padding: 6px 25px;
     width: 800px;
@@ -1256,6 +1257,10 @@ header.sticky {
 .dropdowns.active > a:hover {
     background: #f1f1f1 none repeat scroll 0 0;
 }
+.chat-list.scroll> li:hover {
+  background: #f1f1f1 none repeat scroll 0 0;
+}
+
 .row[data-gutter="10"] > [class^="col-"] {
     padding-left: 5px;
     padding-right: 5px;
@@ -4831,7 +4836,8 @@ canvas {
 .chat-box {
     background: #fbfbfb none repeat scroll 0 0;
     border-radius: 3px;
-    bottom: -2px;
+    /*bottom: -450px;*/
+    top: 150px;
     position: absolute;
     right: 100%;
     width: 300px;
@@ -4842,7 +4848,7 @@ canvas {
     transition: all 0.2s linear 0s;
     border: 1px solid #e1e8ed;
     text-align: left;
-	box-shadow: -15px -15px 20px rgba(0, 0, 0, 0.2);
+	  box-shadow: -15px -15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .chat-box.show {
@@ -5179,7 +5185,7 @@ canvas {
     background-color: transparent !important;
 }
 
-.chat-friendz .chat-box {
+.chat-friendz {
     bottom: -43px;
 }
 
@@ -16114,6 +16120,9 @@ a.shopping-cart > i {
     margin-top: 16px;
     padding: 6px 13px;
     text-transform: capitalize;
+}
+.display-post {
+  display: block;
 }
 
 
