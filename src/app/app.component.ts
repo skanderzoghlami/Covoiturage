@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projetv1';
   activate(event) {
-    event.target.classList.add('active');
+    event.target.classList.toggle('active');
   }
 }
